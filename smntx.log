@@ -1,0 +1,76 @@
+[04/02/2018 03:29:34 AM] *************************************************************
+[04/02/2018 03:29:34 AM] INICIO EXECUCAO APLICACAO
+[04/02/2018 03:29:34 AM] *************************************************************
+[04/02/2018 03:29:34 AM] DISCLAIMER
+[04/02/2018 03:29:34 AM] Versao Python: Python 2.6.6
+[04/02/2018 03:29:34 AM] Versao Spark: Spark 1.0.0
+[04/02/2018 03:29:34 AM] Pacotes: logging, re, shutil, os, pyspark(SparkContext)
+[04/02/2018 03:29:34 AM] Candidata: JML
+[04/02/2018 03:29:34 AM] *************************************************************
+[04/02/2018 03:29:34 AM] PREPARO APLICACAO
+[04/02/2018 03:29:34 AM] Verifica Execucoes Anteriores
+[04/02/2018 03:29:34 AM] Nova Execucao. Nao foram encontrados arquivos a serem deletados
+[04/02/2018 03:29:34 AM] Reserva Recurso - Iniciando SparkContext
+[04/02/2018 03:29:41 AM] Identificando diretorio e arquivos para analise
+[04/02/2018 03:29:41 AM] *************************************************************
+[04/02/2018 03:29:41 AM] INICIO PROCESSO_QUESTAO_1 
+				01 - Identifica todos os hosts,
+				02 - Seleciona distintos,
+				03 - Contagem
+[04/02/2018 03:31:24 AM] FIM PROCESSO_QUESTAO_1 
+[04/02/2018 03:31:24 AM] *************************************************************
+[04/02/2018 03:31:24 AM] INICIO PREPARO_QUESTAO_2,3,4 
+				01 - Filtra linhas dos log com erros 404
+[04/02/2018 03:31:24 AM] FIM PREPARO_QUESTAO_2,3,4 
+[04/02/2018 03:31:24 AM] *************************************************************
+[04/02/2018 03:31:24 AM] INICIO PROCESSO_QUESTAO_2 
+				02 - A partir das linhas com erro 404, Realiza contagem
+[04/02/2018 03:32:46 AM] FIM PROCESSO_QUESTAO_2 
+[04/02/2018 03:32:46 AM] *************************************************************
+[04/02/2018 03:32:46 AM] INICIO PROCESSO_QUESTAO_3 
+				02 - A partir das linhas com erro 404, Seleciona hosts,
+				03 - Soma a quantidade de erros por host,
+				04 - Ordena da maior quantidade para a menor,
+				05 - Seleciona o top 5
+[04/02/2018 03:34:11 AM] FIM PROCESSO_QUESTAO_3 
+[04/02/2018 03:34:11 AM] *************************************************************
+[04/02/2018 03:34:11 AM] INICIO PROCESSO_QUESTAO_4 
+				02 - A partir das linhas com erro 404, Seleciona as datas, 
+				03 - Soma a quantidade de erros por data
+[04/02/2018 03:34:11 AM] 	04 - Gera resultado
+[04/02/2018 03:35:41 AM] 	05 - Salva resultado em arquivo
+[04/02/2018 03:35:41 AM] FIM PROCESSO_QUESTAO_4 
+[04/02/2018 03:35:41 AM] *************************************************************
+[04/02/2018 03:35:41 AM] INICIO PROCESSO_QUESTAO_5 
+				01 - Filtra as linhas que possuem numeros em "bytes"
+				02 - Seleciona os bytes 
+				03 - Soma todos os bytes 
+[04/02/2018 03:37:51 AM] FIM PROCESSO_QUESTAO_5 
+[04/02/2018 03:37:51 AM] *************************************************************
+
+RELATORIO RESPOSTAS CONSOLIDADAS : 
+
+
+1 - Numero de hosts unicos: 137979 
+
+2 - Total de erros 404: 20901 
+
+3 - Os 5 URLs que mais causaram erro 404: 
+[(251, u'hoohoo.ncsa.uiuc.edu'), (157, u'piweba3y.prodigy.com'), (132, u'jbiagioni.npt.nuwc.navy.mil'), (114, u'piweba1y.prodigy.com'), (91, u'www-d4.proxy.aol.com')] 
+
+4 - Quantidade de erros 404 por dia: 
+[(u'07/Jul/1995', 570), (u'28/Aug/1995', 410), (u'04/Aug/1995', 346), (u'10/Aug/1995', 315), (u'24/Aug/1995', 420), (u'21/Jul/1995', 334), (u'27/Aug/1995', 370), (u'10/Jul/1995', 398), (u'16/Aug/1995', 259), (u'17/Jul/1995', 406), (u'01/Jul/1995', 316), (u'13/Aug/1995', 216), (u'22/Aug/1995', 288), (u'20/Jul/1995', 428), (u'06/Jul/1995', 640), (u'01/Aug/1995', 243), (u'08/Aug/1995', 391), (u'14/Aug/1995', 287), (u'20/Aug/1995', 312), (u'06/Aug/1995', 373), (u'25/Aug/1995', 415), (u'29/Aug/1995', 420), (u'09/Jul/1995', 348), (u'05/Jul/1995', 497), (u'03/Jul/1995', 474), (u'19/Aug/1995', 209), (u'26/Jul/1995', 336), (u'28/Jul/1995', 94), (u'25/Jul/1995', 461), (u'02/Jul/1995', 291), (u'09/Aug/1995', 279), (u'14/Jul/1995', 413), (u'05/Aug/1995', 236), (u'17/Aug/1995', 271), (u'03/Aug/1995', 304), (u'11/Aug/1995', 263), (u'22/Jul/1995', 192), (u'23/Aug/1995', 345), (u'04/Jul/1995', 359), (u'12/Jul/1995', 471), (u'26/Aug/1995', 366), (u'15/Jul/1995', 254), (u'23/Jul/1995', 233), (u'18/Jul/1995', 465), (u'12/Aug/1995', 196), (u'31/Aug/1995', 526), (u'21/Aug/1995', 305), (u'15/Aug/1995', 327), (u'27/Jul/1995', 336), (u'08/Jul/1995', 302), (u'16/Jul/1995', 257), (u'19/Jul/1995', 639), (u'07/Aug/1995', 537), (u'18/Aug/1995', 256), (u'24/Jul/1995', 328), (u'13/Jul/1995', 532), (u'11/Jul/1995', 471), (u'30/Aug/1995', 571)] 
+
+5 - O total de bytes retornados: 65524314915 
+
+FIM RELATORIO COM AS RESPOSTAS CONSOLIDADA
+
+
+[04/02/2018 03:37:51 AM] FIM GERACAO RELATORIO
+[04/02/2018 03:37:51 AM] *************************************************************
+[04/02/2018 03:37:51 AM] INICIO POS PROCESSAMENTO APLICACAO
+[04/02/2018 03:37:51 AM] Desalocando Recurso - Parando SparkContext
+[04/02/2018 03:37:53 AM] FIM POS PROCESSAMENTO APLICACAO
+[04/02/2018 03:37:53 AM] *************************************************************
+[04/02/2018 03:37:53 AM] FIM EXECUCAO APLICACAO
+[04/02/2018 03:37:53 AM] *************************************************************
