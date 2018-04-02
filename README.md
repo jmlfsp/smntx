@@ -21,7 +21,7 @@ Através de um contexto Spark, identifica um arquivo texto do HDFS. Em seguida, 
 
 ## Respostas - Parte prática
 
-Publicado o log da aplicação (smntx.log) e o código da aplicação (smntx_lab.py) construída para a realização dos testes. É gerado um relatório com as respostas para cada pergunta.
+Publicado o log da aplicação (smntx.log) e o código da aplicação (smntx.py) construída para a realização dos testes. É gerado um relatório com as respostas para cada pergunta.
 A aplicação foi desenvolvida em Python (v.2.6.6) e Spark (v.1.0.0), utilizando RDDs e foram utilizados os pacotes : logging, re, shutil, os, pyspark(SparkContext).
 Para a construção da aplicação, foram consultados materiais das minhas aulas, além das documentações do Python e Spark, bem como StackOverflow.
 
